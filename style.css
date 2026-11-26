@@ -1,0 +1,183 @@
+/* ESTILO GERAL DA PÁGINA */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #18324b;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+/* CABEÇALHO */
+header {
+  background-color: white;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1,
+footer h2 {
+  color: #2479d0;
+  margin: 0;
+}
+
+header h1 na,
+footer h2 span {
+  color: #32b889;
+}
+
+
+nav a {
+    color: #18324b;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: font-size 0.3s ease;
+}
+
+nav a:hover{
+    font-size: 20px;
+}
+
+/* SEÇÕES */
+section {
+  padding: 60px 8%;
+}
+
+section h2 {
+  text-align: center;
+  color: #18324b;
+}
+
+.inicio {
+  background-color: #f0f7fc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.inicio div {
+  width: 50%;
+}
+
+.inicio h2 {
+  text-align: left;
+  font-size: 40px;
+}
+
+.inicio p {
+  line-height: 1.6;
+}
+
+.botao {
+  display: inline-block;
+  background-color: #2479d0;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.imagem {
+  background-color: #dcefe9;
+  padding: 45px 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.imagem span {
+  font-size: 90px;
+}
+
+.texto-centro {
+  text-align: center;
+  max-width: 650px;
+  margin: 20px auto;
+  line-height: 1.6;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: #f3f7fa;
+  padding: 25px;
+  border-radius: 10px;
+  flex: 1;
+}
+
+.card h3 {
+  color: #2479d0;
+}
+
+.card p,
+.problema p,
+#projeto > p {
+  line-height: 1.6;
+}
+
+/* OUTRAS SEÇÕES */
+.problema {
+  background-color: #f0f7fc;
+}
+
+.problema p,
+#projeto > p {
+  max-width: 750px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.ajudar {
+  background-color: #eaf7f1;
+  text-align: center;
+}
+
+.opcoes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+button {
+  background-color: #2479d0;
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover,
+.botao:hover {
+  background-color: #1765b6;
+}
+
+#mensagem {
+  color: #16875f;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* RODAPÉ */
+footer {
+  background-color: #18324b;
+  color: white;
+  text-align: center;
+  padding: 35px 15px;
+}
+
+footer p {
+  font-size: 14px;
+}
