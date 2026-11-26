@@ -6,8 +6,8 @@ body {
 }
 
 html{
-    scroll-behavior: smooth;
-    font-size: 16px;
+  scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 /* CABEÇALHO */
@@ -32,14 +32,14 @@ footer h2 span {
 
 
 nav a {
-    color: #18324b;
-    text-decoration: none;
-    margin-left: 20px;
-    transition: font-size 0.3s ease;
+  color: #18324b;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: font-size 0.3s ease;
 }
 
 nav a:hover{
-    font-size: 20px;
+  font-size: 125%;
 }
 
 /* SEÇÕES */
@@ -164,10 +164,99 @@ button:hover,
   background-color: #1765b6;
 }
 
+#ajudar {
+  margin: 20px 20px;
+}
+
 #mensagem {
   color: #16875f;
   font-weight: bold;
   margin-top: 20px;
+}
+
+/* FORMULÁRIO DE VOLUNTARIADO */
+.logo-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.cabecalho-pagina {
+  background-color: #f0f7fc;
+  text-align: center;
+}
+
+.cabecalho-pagina p,
+.formulario-voluntario {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.formulario-voluntario {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.aviso-formulario {
+  padding: 14px 18px;
+  background-color: #eaf7f1;
+  border-radius: 6px;
+  line-height: 1.5;
+}
+
+.campo {
+  margin: 20px 0;
+}
+
+.campo label,
+.campo legend {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #9aabba;
+  border-radius: 6px;
+  color: #18324b;
+  font: inherit;
+}
+
+.campo textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.campo fieldset {
+  padding: 16px;
+  border: 1px solid #9aabba;
+  border-radius: 6px;
+}
+
+.campo fieldset label {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 12px 0 0;
+  font-weight: normal;
+}
+
+.campo input[type="checkbox"] {
+  width: auto;
+  margin-top: 4px;
+}
+
+.formulario-voluntario button {
+  font: inherit;
+}
+
+#confirmacao {
+  color: #16875f;
+  font-weight: bold;
 }
 
 /* RODAPÉ */
@@ -180,4 +269,89 @@ footer {
 
 footer p {
   font-size: 14px;
+}
+
+/* FORMULÁRIO DE DOAÇÃO DE EQUIPAMENTO */
+.formulario-equipamento {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.formulario-equipamento-conteudo {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.aviso-doacao {
+  padding: 14px 18px;
+  background-color: #eaf7f1;
+  border-radius: 6px;
+  line-height: 1.5;
+}
+
+#confirmacao-doacao {
+  color: #16875f;
+  font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  .pagina-equipamento header {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .pagina-equipamento nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .pagina-equipamento nav a {
+    margin-left: 0;
+  }
+}
+
+/* FORMULÁRIO PARA CONTRIBUIÇÃO EM REAIS */
+.formulario-contribuicao {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.formulario-contribuicao-conteudo {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.aviso-contribuicao {
+  padding: 14px 18px;
+  background-color: #eaf7f1;
+  border-radius: 6px;
+  line-height: 1.5;
+}
+
+.valor-contribuicao {
+  display: flex;
+  align-items: stretch;
+}
+
+.valor-contribuicao span {
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  background-color: #f3f7fa;
+  border: 1px solid #9aabba;
+  border-right: 0;
+  border-radius: 6px 0 0 6px;
+}
+
+.valor-contribuicao input {
+  flex: 1;
+  min-width: 0;
+  width: auto;
+  border-radius: 0 6px 6px 0;
+}
+
+#confirmacao-contribuicao {
+  color: #16875f;
+  font-weight: bold;
 }

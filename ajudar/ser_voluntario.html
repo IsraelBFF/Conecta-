@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Candidate-se para ser voluntário no projeto Conecta Oportunidades.">
+    <title>Seja voluntário | Conecta Oportunidades</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1><a class="logo-link" href="../index.html">Conecta<span>+</span></a></h1>
+        
+        <nav aria-label="Navegação principal">
+            <a href="../index.html#ajudar">Início</a>
+            <a href="../index.html#sobre">Sobre</a>
+            <a href="../index.html#projeto">Nosso projeto</a>
+        </nav>
+
+        <div class="controles">
+            <button type="button" class="btn-fonte" id="diminuir-fonte" aria-label="Diminuir tamanho do texto">A-</button>
+            <button type="button" class="btn-fonte" id="resetar-fonte" aria-label="Restaurar tamanho do texto">A</button>
+            <button type="button" class="btn-fonte" id="aumentar-fonte" aria-label="Aumentar tamanho do texto">A+</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="cabecalho-pagina">
+            <h2>Seja voluntário no Conecta Oportunidades</h2>
+            <p>
+                Queremos aproximar pessoas do mundo digital. Conte um pouco sobre você
+                e como gostaria de contribuir com nosso projeto.
+            </p>
+        </section>
+
+        <section class="formulario-voluntario" aria-label="Formulário de candidatura">
+            <form id="formulario-voluntario">
+                <div class="campo">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" name="nome" autocomplete="name" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                </div>
+
+                <div class="campo">
+                    <label for="telefone">Telefone (opcional)</label>
+                    <input type="tel" id="telefone" name="telefone" autocomplete="tel">
+                </div>
+
+                <div class="campo">
+                    <label for="area">Como gostaria de ajudar?</label>
+                    <select id="area" name="area" required>
+                        <option value="" selected disabled>Selecione uma opção</option>
+                        <option value="ensino">Ensinar habilidades digitais</option>
+                        <option value="equipamentos">Preparar ou organizar equipamentos</option>
+                        <option value="organizacao">Apoiar a organização do projeto</option>
+                        <option value="outro">Outra forma de ajudar</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <fieldset>
+                        <legend>Quando você tem disponibilidade?</legend>
+                        <label><input type="checkbox" name="disponibilidade" value="dias-uteis"> Dias úteis</label>
+                        <label><input type="checkbox" name="disponibilidade" value="fins-de-semana"> Fins de semana</label>
+                        <label><input type="checkbox" name="disponibilidade" value="flexivel"> Horários flexíveis</label>
+                    </fieldset>
+                </div>
+
+                <div class="campo">
+                    <label for="motivacao">Por que quer participar? (opcional)</label>
+                    <textarea id="motivacao" name="motivacao"></textarea>
+                </div>
+
+                <button type="submit">Enviar candidatura</button>
+                <p id="confirmacao" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <h2>Conecta<span>+</span></h2>
+        <p>Tecnologia que aproxima. Oportunidades que transformam.</p>
+        <p>Projeto acadêmico demonstrativo.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

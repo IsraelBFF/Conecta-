@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contribua com o projeto Conecta Oportunidades.">
+    <title>Fazer uma contribuição | Conecta Oportunidades</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="pagina-contribuicao">
+    <header>
+        <h1><a class="logo-link" href="../index.html">Conecta<span>+</span></a></h1>
+
+        <nav aria-label="Navegação principal">
+            <a href="../index.html#ajudar">Início</a>
+            <a href="../index.html#sobre">Sobre</a>
+            <a href="../index.html#projeto">Nosso projeto</a>
+        </nav>
+
+        <div class="controles">
+            <button type="button" class="btn-fonte" id="diminuir-fonte" aria-label="Diminuir tamanho do texto">A-</button>
+            <button type="button" class="btn-fonte" id="resetar-fonte" aria-label="Restaurar tamanho do texto">A</button>
+            <button type="button" class="btn-fonte" id="aumentar-fonte" aria-label="Aumentar tamanho do texto">A+</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="cabecalho-pagina">
+            <h2>Contribua com o Conecta Oportunidades</h2>
+            <p>
+                Sua contribuição ajuda a preparar equipamentos e ampliar o acesso à tecnologia.
+                Escolha um valor para apoiar o projeto.
+            </p>
+        </section>
+
+        <section class="formulario-contribuicao" aria-label="Formulário para contribuição">
+            <div class="formulario-contribuicao-conteudo">
+                <form id="formulario-contribuicao">
+                    <div class="campo">
+                        <label for="nome-contribuinte">Nome completo</label>
+                        <input type="text" id="nome-contribuinte" name="nome" autocomplete="name" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="email-contribuinte">E-mail</label>
+                        <input type="email" id="email-contribuinte" name="email" autocomplete="email" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="valor-contribuicao">Valor da contribuição (em reais)</label>
+                        <div class="valor-contribuicao">
+                            <span aria-hidden="true">R$</span>
+                            <input
+                                type="number"
+                                id="valor-contribuicao"
+                                name="valor"
+                                min="0.01"
+                                step="0.01"
+                                inputmode="decimal"
+                                placeholder="0,00"
+                                required
+                            >
+                        </div>
+                    </div>
+
+                    <button type="submit">Continuar</button>
+                    <p id="confirmacao-contribuicao" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h2>Conecta<span>+</span></h2>
+        <p>Tecnologia que aproxima. Oportunidades que transformam.</p>
+        <p>Projeto acadêmico demonstrativo.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ofereça um equipamento eletrônico ao projeto Conecta Oportunidades.">
+    <title>Doar equipamento | Conecta Oportunidades</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="pagina-equipamento">
+    <header>
+        <h1><a class="logo-link" href="../index.html">Conecta<span>+</span></a></h1>
+
+        <nav aria-label="Navegação principal">
+            <a href="../index.html#ajudar">Início</a>
+            <a href="../index.html#sobre">Sobre</a>
+            <a href="../index.html#projeto">Nosso projeto</a>
+        </nav>
+
+        <div class="controles">
+            <button type="button" class="btn-fonte" id="diminuir-fonte" aria-label="Diminuir tamanho do texto">A-</button>
+            <button type="button" class="btn-fonte" id="resetar-fonte" aria-label="Restaurar tamanho do texto">A</button>
+            <button type="button" class="btn-fonte" id="aumentar-fonte" aria-label="Aumentar tamanho do texto">A+</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="cabecalho-pagina">
+            <h2>Doe um equipamento ao Conecta Oportunidades</h2>
+            <p>
+                Seu equipamento pode ajudar alguém a estudar, trabalhar e se conectar.
+                Conte para nós sobre o item que deseja doar.
+            </p>
+        </section>
+
+        <section class="formulario-equipamento" aria-label="Formulário para doação de equipamento">
+            <div class="formulario-equipamento-conteudo">
+                <form id="formulario-equipamento">
+                    <div class="campo">
+                        <label for="nome-doador">Nome completo</label>
+                        <input type="text" id="nome-doador" name="nome" autocomplete="name" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="email-doador">E-mail</label>
+                        <input type="email" id="email-doador" name="email" autocomplete="email" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="telefone-doador">Telefone (opcional)</label>
+                        <input type="tel" id="telefone-doador" name="telefone" autocomplete="tel">
+                    </div>
+
+                    <div class="campo">
+                        <label for="tipo-equipamento">Equipamento que deseja doar</label>
+                        <select id="tipo-equipamento" name="equipamento" required>
+                            <option value="" selected disabled>Selecione uma opção</option>
+                            <option value="computador">Computador</option>
+                            <option value="notebook">Notebook</option>
+                            <option value="celular">Celular ou smartphone</option>
+                            <option value="tablet">Tablet</option>
+                            <option value="periferico">Monitor ou periférico</option>
+                            <option value="outro">Outro equipamento eletrônico</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="estado-equipamento">Condição do equipamento</label>
+                        <select id="estado-equipamento" name="condicao" required>
+                            <option value="" selected disabled>Selecione uma opção</option>
+                            <option value="funcionando">Funcionando normalmente</option>
+                            <option value="defeito">Apresenta algum defeito</option>
+                            <option value="nao-liga">Não liga</option>
+                            <option value="nao-sei">Não sei informar</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" id="cidade" name="cidade" autocomplete="address-level2" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="detalhes-equipamento">Marca, modelo ou outras informações (opcional)</label>
+                        <textarea id="detalhes-equipamento" name="detalhes"></textarea>
+                    </div>
+
+                    <button type="submit">Registrar interesse em doar</button>
+                    <p id="confirmacao-doacao" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h2>Conecta<span>+</span></h2>
+        <p>Tecnologia que aproxima. Oportunidades que transformam.</p>
+        <p>Projeto acadêmico demonstrativo.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
