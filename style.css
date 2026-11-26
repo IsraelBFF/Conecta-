@@ -54,9 +54,13 @@ section h2 {
 .inicio {
   background-color: #f0f7fc;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
   gap: 30px;
+}
+
+.inicio > div:first-child {
+  align-self: center;
 }
 
 .inicio div {
@@ -84,9 +88,23 @@ section h2 {
 
 .imagem {
   background-color: #dcefe9;
-  padding: 45px 20px;
+  padding: 0;
   border-radius: 15px;
   text-align: center;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ajustar a ilustração à altura do texto sem deixá-la crescer demais. */
+.imagem img {
+  display: block;
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  max-height: 15em;
+  object-fit: contain;
 }
 
 .imagem span {
@@ -296,23 +314,6 @@ footer p {
   font-weight: bold;
 }
 
-@media (max-width: 900px) {
-  .pagina-equipamento header {
-    flex-wrap: wrap;
-    gap: 16px;
-  }
-
-  .pagina-equipamento nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-  }
-
-  .pagina-equipamento nav a {
-    margin-left: 0;
-  }
-}
-
 /* FORMULÁRIO PARA CONTRIBUIÇÃO EM REAIS */
 .formulario-contribuicao {
   padding-top: 40px;
@@ -412,5 +413,102 @@ footer p {
 .chamada-projeto {
   background-color: #eaf7f1;
   text-align: center;
+}
+
+/* Apresentação dos conceitos e desafios de inclusão digital. */
+.introducao-inclusao {
+  background-color: #f0f7fc;
+  text-align: center;
+}
+
+.introducao-inclusao p,
+.desafios-inclusao p {
+  max-width: 800px;
+  margin: 20px auto;
+  line-height: 1.7;
+}
+
+.conceitos-inclusao,
+.marcos-inclusao,
+.fontes-inclusao {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.dados-inclusao {
+  background-color: #f0f7fc;
+}
+
+.conteudo-dados-inclusao {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.conteudo-dados-inclusao > p:not(.fonte-dados) {
+  max-width: 800px;
+  line-height: 1.7;
+}
+
+/* Destaque numérico e linha do tempo dos marcos nacionais. */
+.dado-inclusao {
+  text-align: center;
+}
+
+.numero-destaque {
+  margin: 0;
+  color: #2479d0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.fonte-dados {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.linha-do-tempo {
+  margin: 30px 0;
+  padding: 0;
+  list-style: none;
+  border-left: 3px solid #32b889;
+}
+
+.linha-do-tempo li {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 20px;
+  padding: 0 0 30px 24px;
+}
+
+.ano-marco {
+  color: #2479d0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.linha-do-tempo h3 {
+  margin: 0 0 8px;
+  color: #2479d0;
+}
+
+.linha-do-tempo p {
+  margin: 0 0 8px;
+  line-height: 1.6;
+}
+
+.fontes-inclusao ul {
+  padding-left: 24px;
+  line-height: 1.8;
+}
+
+.chamada-inclusao {
+  background-color: #eaf7f1;
+  text-align: center;
+}
+
+/* Remover o sublinhado dos links apenas na página de inclusão digital. */
+.pagina-inclusao a {
+  text-decoration: none;
 }
 
