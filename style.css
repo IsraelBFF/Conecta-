@@ -30,7 +30,6 @@ footer h2 span {
   color: #32b889;
 }
 
-
 nav a {
   color: #18324b;
   text-decoration: none;
@@ -164,14 +163,17 @@ button:hover,
   background-color: #1765b6;
 }
 
-#ajudar {
-  margin: 20px 20px;
-}
-
 #mensagem {
   color: #16875f;
   font-weight: bold;
   margin-top: 20px;
+}
+
+#projeto #ajudar-botao{
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+  text-align: center;
 }
 
 /* FORMULÁRIO DE VOLUNTARIADO */
@@ -355,3 +357,60 @@ footer p {
   color: #16875f;
   font-weight: bold;
 }
+
+/* Apresentação, história e imagem do projeto Conecta Oportunidades. */
+.apresentacao-projeto {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+  align-items: center;
+  gap: 40px;
+  background-color: #f0f7fc;
+}
+
+.texto-apresentacao-projeto h2 {
+  text-align: left;
+  font-size: 38px;
+}
+
+.texto-apresentacao-projeto p {
+  line-height: 1.7;
+}
+
+.identificacao-projeto {
+  color: #2479d0;
+  font-weight: bold;
+}
+
+.imagem-projeto {
+  margin: 0;
+}
+
+.imagem-projeto img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.imagem-projeto figcaption {
+  margin-top: 10px;
+  color: #18324b;
+  font-size: 14px;
+  text-align: center;
+}
+
+.historia-projeto,
+.atuacao-projeto {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.historia-projeto p {
+  line-height: 1.7;
+}
+
+.chamada-projeto {
+  background-color: #eaf7f1;
+  text-align: center;
+}
+
