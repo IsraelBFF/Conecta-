@@ -21,10 +21,12 @@
             <button type="button" class="btn-fonte" id="diminuir-fonte" aria-label="Diminuir tamanho do texto">A-</button>
             <button type="button" class="btn-fonte" id="resetar-fonte" aria-label="Restaurar tamanho do texto">A</button>
             <button type="button" class="btn-fonte" id="aumentar-fonte" aria-label="Aumentar tamanho do texto">A+</button>
+            <button type="button" class="btn-tema" id="alternar-tema" aria-label="Ativar modo escuro" aria-pressed="false">Modo escuro</button>
         </div>
     </header>
 
     <main>
+        <!-- APRESENTAÇÃO -->
         <section class="cabecalho-pagina">
             <h2>Seja voluntário no Conecta Oportunidades</h2>
             <p>
@@ -33,21 +35,22 @@
             </p>
         </section>
 
+        <!-- FORMULÁRIO -->
         <section class="formulario-voluntario" aria-label="Formulário de candidatura">
             <form id="formulario-voluntario">
                 <div class="campo">
                     <label for="nome">Nome completo</label>
-                    <input type="text" id="nome" name="nome" autocomplete="name" required>
+                    <input type="text" id="nome" name="nome" autocomplete="name" placeholder="Fulano da Silva">
                 </div>
 
                 <div class="campo">
                     <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email" autocomplete="email" required>
+                    <input type="email" id="email" name="email" autocomplete="email" placeholder="fulanodasilva@gmail.com">
                 </div>
 
                 <div class="campo">
                     <label for="telefone">Telefone (opcional)</label>
-                    <input type="tel" id="telefone" name="telefone" autocomplete="tel">
+                    <input type="tel" id="telefone" name="telefone" autocomplete="tel" placeholder="(XX) XXXXX-XXXX">
                 </div>
 
                 <div class="campo">
@@ -64,9 +67,9 @@
                 <div class="campo">
                     <fieldset>
                         <legend>Quando você tem disponibilidade?</legend>
-                        <label><input type="checkbox" name="disponibilidade" value="dias-uteis"> Dias úteis</label>
-                        <label><input type="checkbox" name="disponibilidade" value="fins-de-semana"> Fins de semana</label>
-                        <label><input type="checkbox" name="disponibilidade" value="flexivel"> Horários flexíveis</label>
+                        <label><input type="radio" name="disponibilidade" value="dias-uteis" required> Dias úteis</label>
+                        <label><input type="radio" name="disponibilidade" value="fins-de-semana"> Fins de semana</label>
+                        <label><input type="radio" name="disponibilidade" value="flexivel"> Horários flexíveis</label>
                     </fieldset>
                 </div>
 

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Caveat:wght@400..700&display=swap');
+
 /* ESTILO GERAL DA PÁGINA */
 body {
   margin: 0;
@@ -7,7 +9,7 @@ body {
 
 html{
   scroll-behavior: smooth;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 /* CABEÇALHO */
@@ -25,7 +27,12 @@ footer h2 {
   margin: 0;
 }
 
-header h1 na,
+header h1,
+footer h2 {
+  font-family: "BBH Bogle", sans-serif;
+}
+
+header h1 span,
 footer h2 span {
   color: #32b889;
 }
@@ -39,6 +46,12 @@ nav a {
 
 nav a:hover{
   font-size: 125%;
+}
+
+.btn-tema {
+  margin-left: 20px;
+  padding: 10px 12px;
+  white-space: nowrap;
 }
 
 /* SEÇÕES */
@@ -87,7 +100,6 @@ section h2 {
 }
 
 .imagem {
-  background-color: #dcefe9;
   padding: 0;
   border-radius: 15px;
   text-align: center;
@@ -105,6 +117,10 @@ section h2 {
   max-width: 100%;
   max-height: 15em;
   object-fit: contain;
+  aspect-ratio: 1;
+  box-sizing: border-box;
+  border: 4px solid #2479d0;
+  border-radius: 50%;
 }
 
 .imagem span {
@@ -130,6 +146,7 @@ section h2 {
   padding: 25px;
   border-radius: 10px;
   flex: 1;
+  text-align: center;
 }
 
 .card h3 {
@@ -265,7 +282,8 @@ button:hover,
   font-weight: normal;
 }
 
-.campo input[type="checkbox"] {
+.campo input[type="checkbox"],
+.campo input[type="radio"] {
   width: auto;
   margin-top: 4px;
 }
@@ -510,5 +528,82 @@ footer p {
 /* Remover o sublinhado dos links apenas na página de inclusão digital. */
 .pagina-inclusao a {
   text-decoration: none;
+}
+
+/* Alternar as cores globais para o modo escuro em todas as páginas. */
+body.tema-escuro {
+  background-color: #121b26;
+  color: #e6edf5;
+}
+
+body.tema-escuro header,
+body.tema-escuro .inicio,
+body.tema-escuro .problema,
+body.tema-escuro .dados-inclusao,
+body.tema-escuro .apresentacao-projeto,
+body.tema-escuro .introducao-inclusao,
+body.tema-escuro .cabecalho-pagina {
+  background-color: #1b2938;
+}
+
+body.tema-escuro .ajudar,
+body.tema-escuro .chamada-projeto,
+body.tema-escuro .chamada-inclusao {
+  background-color: #1b352f;
+}
+
+body.tema-escuro .card {
+  background-color: #243648;
+}
+
+body.tema-escuro h2,
+body.tema-escuro h3,
+body.tema-escuro .campo label,
+body.tema-escuro .campo legend {
+  color: #e6edf5;
+}
+
+body.tema-escuro header h1,
+body.tema-escuro footer h2,
+body.tema-escuro .card h3,
+body.tema-escuro .numero-destaque,
+body.tema-escuro .ano-marco,
+body.tema-escuro .linha-do-tempo h3 {
+  color: #9dccff;
+}
+
+body.tema-escuro nav a,
+body.tema-escuro a:not(.botao) {
+  color: #9dccff;
+}
+
+body.tema-escuro .aviso-formulario,
+body.tema-escuro .aviso-doacao,
+body.tema-escuro .aviso-contribuicao {
+  background-color: #1b352f;
+}
+
+body.tema-escuro .campo input,
+body.tema-escuro .campo select,
+body.tema-escuro .campo textarea {
+  background-color: #172330;
+  border-color: #53677a;
+  color: #e6edf5;
+}
+
+body.tema-escuro .campo fieldset {
+  border-color: #53677a;
+}
+
+body.tema-escuro .valor-contribuicao span {
+  background-color: #243648;
+  border-color: #53677a;
+}
+
+body.tema-escuro #confirmacao,
+body.tema-escuro #confirmacao-doacao,
+body.tema-escuro #confirmacao-contribuicao,
+body.tema-escuro #mensagem {
+  color: #63d8aa;
 }
 
